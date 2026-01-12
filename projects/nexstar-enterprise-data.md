@@ -25,11 +25,9 @@ This solution enables:
 
 This project demonstrates enterprise-scale data architecture, analytics engineering, and governance design for a real-world fintech environment.
 ## Data Model
-![Schema](<img width="799" height="501" alt="image" src="https://github.com/user-attachments/assets/ed2af31f-3d1b-4067-9e4d-01489622f2f6" />
-)
+![Schema](../assets/nexstar-schema.png)
 
 ## SQL Analytics
-![SQL](<img width="693" height="435" alt="image" src="https://github.com/user-attachments/assets/bd5abe2c-0b05-4c0a-a6de-e746fc776fa6" />
-)
-![SQL](<img width="636" height="399" alt="image" src="https://github.com/user-attachments/assets/f34e6242-d772-45b3-8c09-dcabe3222926" />
-)
+![SQL](../assets/nexstar-sql-joins.png)
+![SQL](../assets/nexstar-sql-analytics.png)
+
