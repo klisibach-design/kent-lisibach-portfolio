@@ -1,23 +1,94 @@
-# Enterprise Data Architecture – NexStar Finance
+# Enterprise Data Architecture & SQL Analysis – NexStar Finance
 
 ## Overview
-This project presents an enterprise data management and architecture strategy for a fictional global fintech organization, NexStar Finance. The goal was to design a scalable, compliant, and analytics-ready data ecosystem to address fragmented systems and inconsistent governance across regions.
+This project demonstrates enterprise data modeling and SQL analysis for a fictional global fintech company, **NexStar Finance**. The goal was to design a normalized relational schema and use SQL to generate business-relevant insights related to customers, transactions, and vendors.
 
-## Problem Statement
-NexStar Finance operated across the United States, Latin America, and Africa with siloed customer, transaction, and vendor data. This fragmentation limited real-time analytics, increased fraud risk, and created regulatory exposure.
+The project emphasizes:
+- Relational database design
+- SQL aggregation, filtering, and joins
+- Translating business questions into queries
+- Enterprise data governance concepts
 
-## What I Built
-- Enterprise data architecture aligned to industry frameworks
-- Centralized data governance and master data strategy
-- Conceptual data warehouse and integration layer design
-- Risk and compliance considerations for a global fintech environment
+📄 **Full written report (PDF):**  
+[nexstar_enterprise_data_management.pdf](./nexstar_enterprise_data_management.pdf)
 
-## Tools & Concepts
-- Enterprise Data Management
-- Data Governance & Master Data Management
-- Relational Data Modeling
-- SQL (conceptual)
-- Data Warehousing Architecture
+---
 
-## Full Project Paper
-📄 **[Download the full Enterprise Data Management paper (PDF)](nexstar_enterprise_data_management.pdf)**
+## Data Model
+
+A three-table relational schema was designed to support centralized analytics and reporting.
+
+### Tables Created
+
+**Customers**
+- `customer_id` (PK)
+- `first_name`
+- `last_name`
+- `region`
+- `account_created`
+
+**Transactions**
+- `transaction_id` (PK)
+- `customer_id` (FK)
+- `vendor_id` (FK)
+- `amount`
+- `transaction_date`
+
+**Vendors**
+- `vendor_id` (PK)
+- `vendor_name`
+- `service_type`
+- `region`
+- `compliance_rating`
+
+📊 **Schema Diagram:**  
+![Relational Schema](./assets/nexstar-schema.png)
+
+---
+
+## SQL Queries
+
+Ten SQL queries were written to demonstrate core analytical patterns used in enterprise reporting.
+
+### Query Summary
+
+| # | Query Purpose | SQL Concepts |
+|---|--------------|-------------|
+| 1 | Count total customers | `COUNT()` |
+| 2 | Customers by region | `COUNT()`, `GROUP BY` |
+| 3 | Minimum transaction amount | `MIN()` |
+| 4 | Maximum transaction amount | `MAX()` |
+| 5 | High-value transactions | `WHERE` |
+| 6 | Sort transactions by amount | `ORDER BY` |
+| 7 | Customer transaction history | `JOIN` |
+| 8 | Total spend per customer | `JOIN`, `SUM()` |
+| 9 | Transactions per vendor | `JOIN`, `COUNT()` |
+|10 | High-value transactions with names | `JOIN`, `WHERE` |
+
+---
+
+## Example SQL Queries
+
+### Count Total Customers
+```sql
+SELECT COUNT(*) AS customer_count
+FROM customers;
+
+### Customers by Region
+SELECT region, COUNT(*) AS customer_count
+FROM customers
+GROUP BY region;
+
+### High-Value Transactions with Customer & Vendor Names
+SELECT c.first_name,
+       c.last_name,
+       v.vendor_name,
+       t.amount
+FROM transactions t
+JOIN customers c
+  ON t.customer_id = c.customer_id
+JOIN vendors v
+  ON t.vendor_id = v.vendor_id
+WHERE t.amount > 500;
+
+
