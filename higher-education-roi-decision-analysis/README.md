@@ -68,6 +68,13 @@ Kent Lisibach
 DAT 520 – Decision Methods and Modeling  
 Southern New Hampshire University
 
+## Project Paper
+
+The full written analysis and methodology for this project is available here:
+
+📄 [Download the full decision analysis paper (PDF)](paper/higher_education_roi_decision_analysis.pdf)
+
+
 
 
 
