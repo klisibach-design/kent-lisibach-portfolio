@@ -25,7 +25,36 @@ This solution enables:
 
 This project demonstrates enterprise-scale data architecture, analytics engineering, and governance design for a real-world fintech environment.
 ## Data Model
-![Schema](../assets/nexstar-schema.png)
+Customers Table
+CREATE TABLE Customers (
+    customer_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    region VARCHAR(50),
+    account_created DATE
+);
+
+Vendors Table
+CREATE TABLE Vendors (
+    vendor_id INT PRIMARY KEY,
+    vendor_name VARCHAR(100),
+    service_type VARCHAR(50),
+    region VARCHAR(50),
+    compliance_rating VARCHAR(20)
+);
+
+Transactions Table
+CREATE TABLE Transactions (
+    transaction_id INT PRIMARY KEY,
+    customer_id INT,
+    vendor_id INT,
+    amount DECIMAL(10,2),
+    transaction_date DATE,
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
+    FOREIGN KEY (vendor_id) REFERENCES Vendors(vendor_id)
+);
+
+
 
 ## SQL Analytics
 # Sample Analytical SQL Queries
