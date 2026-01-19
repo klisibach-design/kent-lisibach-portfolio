@@ -71,10 +71,8 @@ Ten SQL queries were written to demonstrate core analytical patterns used in ent
 
 ## Example SQL Queries
 
-### Count Total Customers
+
 ```sql
-SELECT COUNT(*) AS customer_count
-FROM customers;
 
 ### Customers by Region
 SELECT region, COUNT(*) AS customer_count
