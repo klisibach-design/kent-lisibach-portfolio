@@ -59,4 +59,23 @@ This initiative follows the standard data analytics life cycle:
 ---
 
 ## Business & Public Health Value
-- Reduced asthma-re
+- Reduced asthma-related hospital admissions
+- Healthcare cost savings
+- Improved targeting of environmental interventions
+- Increased transparency and community trust
+- Stronger evidence-based policymaking
+
+---
+
+## Ethical & Legal Considerations
+- De-identification and encryption of health data
+- Avoidance of neighborhood stigmatization
+- Responsible communication of aggregated trends
+- Compliance with HIPAA and city privacy standards
+
+---
+
+## Author
+Kent Lisibach  
+DAT 510 – Data Analytics  
+Southern New Hampshire University
