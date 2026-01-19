@@ -79,3 +79,7 @@ This initiative follows the standard data analytics life cycle:
 Kent Lisibach  
 DAT 510 – Data Analytics  
 Southern New Hampshire University
+
+📄 **Full proposal (PDF):**  
+[Download the NYC Air Quality & Public Health Analytics Proposal](nyc-air-quality-analytics-proposal.pdf)
+
