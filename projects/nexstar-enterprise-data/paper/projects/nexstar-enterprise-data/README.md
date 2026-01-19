@@ -32,7 +32,7 @@ Leadership lacked a unified data model to support enterprise analytics and opera
 
 ## Key Artifacts
 - 📄 **Full enterprise data management paper (PDF)**  
-  [Download the NexStar Enterprise Data Management Paper](paper/nexstar_enterprise_data_management.pdf)
+ projects/nexstar-enterprise-data/paper/nexstar_enterprise_data_management.pdf
 
 - 🗂 **Schema and SQL join diagrams**  
   Located in the `assets/` folder
