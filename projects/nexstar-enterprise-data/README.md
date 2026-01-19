@@ -143,8 +143,8 @@ JOIN Vendors v
     ON t.vendor_id = v.vendor_id
 WHERE t.amount > 500;
 
-## Project Paper
+📄 **Full enterprise data management paper (PDF):**  
+[Download the NexStar Enterprise Data Management Paper](paper/nexstar_enterprise_data_management.pdf)
 
-📄 [Download the full NexStar Enterprise Data Management paper (PDF)](paper/nexstar_enterprise_data_management.pdf)
 
 
