@@ -1,4 +1,4 @@
-# Kent Lisibach – Data & Analytics Portfolio
+# Kent Lisibach — Data Analytics & Decision Science Portfolio
 
 Welcome to my data analytics portfolio. This repository contains selected academic and applied projects demonstrating skills in data analysis, decision modeling, SQL, visualization, and public-sector analytics.
 
