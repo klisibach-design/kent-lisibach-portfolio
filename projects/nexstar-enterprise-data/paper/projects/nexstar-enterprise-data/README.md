@@ -41,8 +41,10 @@ A three-table relational schema was designed to support centralized analytics an
 - `region`
 - `compliance_rating`
 
-📊 **Schema Diagram:**  
-![Relational Schema](./assets/nexstar-schema.png)
+### Schema Diagram
+
+![Relational Schema](./Relational%20data%20model.jpg)
+
 
 ---
 
